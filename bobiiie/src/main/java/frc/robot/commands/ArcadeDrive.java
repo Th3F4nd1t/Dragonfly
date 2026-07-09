@@ -32,7 +32,8 @@ public class ArcadeDrive extends Command {
     double processedRotation =
         squareWithSign(MathUtil.applyDeadband(rawRotation, DriveConstants.kDeadband));
 
-    // Scale and clamp outputs before sending to drivetrain.
+    // Scale and clamp outputs before sending to drivetrain; clamp protects against
+    // multipliers being tuned above 1.0 in Constants.
     double clampedSpeed =
         MathUtil.clamp(
             processedSpeed * DriveConstants.kDriveSpeedMultiplier,
