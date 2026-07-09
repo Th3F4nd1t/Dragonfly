@@ -20,6 +20,7 @@ public final class Constants {
     public static final boolean kRightSideInverted = true;
 
     public static final double kDriveSpeedMultiplier = 1.0;
+    public static final double kTurnSpeedMultiplier = 1.0;
     public static final double kDeadband = 0.1;
 
     private DriveConstants() {}

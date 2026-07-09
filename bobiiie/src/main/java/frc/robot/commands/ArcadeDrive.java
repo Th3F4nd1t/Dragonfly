@@ -40,7 +40,7 @@ public class ArcadeDrive extends Command {
             1.0);
     double clampedRotation =
         MathUtil.clamp(
-            processedRotation,
+            processedRotation * DriveConstants.kTurnSpeedMultiplier,
             -1.0,
             1.0);
 
