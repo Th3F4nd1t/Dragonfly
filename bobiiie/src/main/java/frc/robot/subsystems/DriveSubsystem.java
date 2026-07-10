@@ -78,7 +78,7 @@ public class DriveSubsystem extends SubsystemBase {
 
   /** Drives the robot using arcade controls. */
   public void arcadeDrive(double speed, double rotation) {
-    m_differentialDrive.arcadeDrive(speed, rotation, false);
+    m_differentialDrive.arcadeDrive(-speed, rotation, false);
   }
 
   /** Stops drivetrain output. */

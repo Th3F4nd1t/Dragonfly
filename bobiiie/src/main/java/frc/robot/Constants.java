@@ -10,10 +10,10 @@ public final class Constants {
 
   /** Constants for drivetrain hardware and behavior. */
   public static final class DriveConstants {
-    public static final int kLeftFrontCanId = 1;
-    public static final int kLeftRearCanId = 2;
-    public static final int kRightFrontCanId = 3;
-    public static final int kRightRearCanId = 4;
+    public static final int kLeftFrontCanId = 4;
+    public static final int kLeftRearCanId = 3;
+    public static final int kRightFrontCanId = 6;
+    public static final int kRightRearCanId = 5;
 
     public static final int kSmartCurrentLimitAmps = 40;
     public static final IdleMode kIdleMode = IdleMode.kBrake;
